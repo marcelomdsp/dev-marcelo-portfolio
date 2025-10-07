@@ -13,7 +13,7 @@ Acesse o site online: [🔗 Ver Portfólio](https://dev.marcelods.com/)
 
 ## 🖼️ Preview
 
-![Preview da seção Hero](./assets/Captura-de-tela-2025-10-06-223450.png)
+![Preview da seção Hero](/src/img/projetos/portfolio.png.png)
 
 > *Imagem ilustrativa da seção inicial (Hero) do portfólio.*
 
