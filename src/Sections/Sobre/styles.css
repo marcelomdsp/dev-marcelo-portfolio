@@ -1,0 +1,149 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 8px;
+  text-align: center;
+   background-color: var(--grafite);
+  color: var(--branco);
+}
+
+.container h2 {
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.area-sobre {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.sobre-texto {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  gap: 2rem;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  color: var(--cinza2);
+}
+
+.sobre-texto h3 {
+  font-size: 1.5rem;
+  color: var(--branco);
+}
+
+.sobre-texto span {
+  color: var(--destaque);
+}
+
+.area-infos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  align-items: center;
+  color: var(--branco);
+}
+
+.area-img {
+  order: 1;
+  display: flex;
+  justify-content: center;
+}
+.area-img img {
+  width: 70%;
+  border-radius: 10px;
+  margin-top: 2rem;
+  filter: brightness(80%) contrast(110%);
+}
+
+.minhas-infos {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 10px 0;
+  text-align: left;
+  order: 2;
+}
+.minhas-infos p {
+  padding: 12px 0 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--cinza2);
+  order: 2;
+}
+
+.minhas-infos a {
+  text-decoration: none;
+  color: var(--destaque);
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  order: 3;
+}
+
+.btn a {
+  color: var(--branco);
+}
+
+@media (min-width: 500px) {
+
+  .minhas-infos {
+    max-width: 90%;
+  }
+
+  .sobre-texto{
+    margin-top: 4rem;
+    padding: 0 2rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .area-sobre {
+    flex-direction: row;
+    align-items: start;
+    max-width: 90%;
+  }
+
+  .area-img {
+    width: 100%;
+  }
+
+  .area-img img {
+    width: 100%;
+  }
+
+  .minhas-infos {
+    width: 100%;
+  }
+
+  .sobre-texto {
+    max-width: 60%;
+  }
+
+  .area-infos {
+    max-width: 40%;
+  }
+
+  
+  .texto {
+    padding: 2rem;
+    width: 70%;
+  }
+
+ 
+
+}
+
+@media (min-width: 1440px) {
+  .area-sobre {
+    max-width: 70%;
+  }
+}

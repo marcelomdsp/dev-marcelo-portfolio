@@ -1,0 +1,161 @@
+.header-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  color: var(--branco);
+  padding: 1rem;
+  z-index: 10;
+  transition: all 0.5s ease;
+}
+
+#header.scrolled {
+  background-color: #111418fc;
+}
+
+.header-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-logo {
+  font-weight: bold;
+  z-index: 20;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--branco);
+  padding: 7px;
+
+  &:hover {
+    color: #9a7b4f;
+  }
+}
+
+.menu-toggle {
+  border: none;
+  color: var(--branco);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 20;
+  background-color: transparent;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 100%;
+  transform: translateY(-50px);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 10;
+  background-color: #111418fc;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  margin-top: 60px;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.header-nav li {
+  display: flex;
+  border-bottom: solid 2px var(--cinza1);
+  width: 100%;
+}
+
+.header-link {
+  color: var(--branco);
+  text-decoration: none;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: var(--destaque);
+  }
+}
+
+.header-nav.show {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.btn-header {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .header-container {
+    height: 60px;
+    justify-content: center;
+  }
+
+  .header-area {
+    max-width: 90%;
+  }
+
+  .header-logo {
+    margin: 5px 1rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .header-nav {
+    width: fit-content;
+    position: static;
+    transform: none;
+    opacity: 1;
+    height: 100%;
+    pointer-events: auto;
+    flex-direction: row;
+    padding: 0;
+    justify-content: flex-end;
+    backdrop-filter: initial;
+    background-color: transparent;
+  }
+
+  .header-nav ul {
+    flex-direction: row;
+    margin-top: 0;
+    padding: 0;
+    width: 500px;
+    margin-right: 2rem;
+    justify-content: space-between;
+  }
+  .header-nav li {
+    border: none;
+    width: fit-content;
+  }
+
+  .btn-header {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-area {
+    max-width: 70%;
+  }
+}

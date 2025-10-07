@@ -1,0 +1,40 @@
+.botao {
+  padding: 10px 30px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  background-color: var(--destaque);
+  color: var(--branco);
+  font-weight: bold;
+  transition: box-shadow 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.botao:hover {
+   transform: scale(1.05);
+}
+
+.animacao-sombra {
+  animation: sombra-pulsante 2s infinite alternate;
+}
+
+
+@keyframes sombra-pulsante {
+  0% {
+    box-shadow: 0 0 5px rgba(43, 88, 222, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 20px 10px rgba(43, 88, 222, 0.5);
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1440px) {
+}
