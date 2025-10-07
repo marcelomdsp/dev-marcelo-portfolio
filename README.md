@@ -13,7 +13,9 @@ Acesse o site online: [🔗 Ver Portfólio](https://dev.marcelods.com/)
 
 ## 🖼️ Preview
 
-![Preview da seção Hero](/src/img/projetos/portfolio.png.png)
+<div align="center">
+  <img src="src/img/projetos/portfolio.png" alt="Sessão Hero" width="600">
+</div>
 
 > *Imagem ilustrativa da seção inicial (Hero) do portfólio.*
 
