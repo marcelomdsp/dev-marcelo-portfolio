@@ -10,7 +10,7 @@ export function Contato() {
         <h2>Fale Comigo</h2>
         <p>Estou aberto a contribuir no desenvolvimento de projetos que entreguem resultados reais.</p>
         <div class="info-contato"> 
-          <p><i class="fa-solid fa-phone"></i> (21)99655-3987  (WhatssApp)</p>
+          <p><i class="fa-solid fa-phone"></i> (21)99655-3987  (WhatsApp)</p>
           <p><i class="fa-solid fa-envelope"></i>marcelopaulomsp@gmail.com</p>
           <div class="redes-sociais">
             <a href="https://github.com/marcelomdsp" target="_blank"><i class="fa-brands fa-github"></i></a>

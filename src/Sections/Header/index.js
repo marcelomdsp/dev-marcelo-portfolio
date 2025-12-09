@@ -1,5 +1,6 @@
 import "./styles.css";
 import { Botao } from "../../Components/Botao";
+
 export function Header() {
   const header = document.createElement("header");
   header.innerHTML = `
@@ -23,7 +24,10 @@ export function Header() {
   const toggle = header.querySelector(".menu-toggle");
   const menu = header.querySelector(".header-nav");
   const links = header.querySelectorAll(".header-link");
-  const btnHeader = Botao("Falar no WhatsApp", "https://wa.me/message/B3VCHP5M4BW5E1");
+  const btnHeader = Botao(
+    "Falar no WhatsApp",
+    "https://wa.me/message/B3VCHP5M4BW5E1"
+  );
   header.querySelector(".btn-header").appendChild(btnHeader);
 
   const icon = document.createElement("i");
@@ -32,7 +36,6 @@ export function Header() {
 
   toggle.addEventListener("click", () => {
     menu.classList.toggle("show");
-
     icon.className = menu.classList.contains("show")
       ? "fa-solid fa-xmark"
       : "fa-solid fa-bars";
@@ -41,6 +44,7 @@ export function Header() {
   links.forEach((link) => {
     link.addEventListener("click", () => {
       menu.classList.remove("show");
+      icon.className = "fa-solid fa-bars";
     });
   });
 
