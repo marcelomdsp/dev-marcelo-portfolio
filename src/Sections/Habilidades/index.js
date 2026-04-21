@@ -25,6 +25,10 @@ export function Habilidades() {
             <img src="/icons/react-original.svg" alt="React" />
             <p>React / React Native</p>
           </div>
+          <div class="skill-card">
+            <img src="/icons/nextjs.svg" alt="Next.js" />
+            <p>Next.js</p>
+          </div>
            <div class="skill-card">
             <img src="/icons/git-original.svg" alt="Git" />
             <p>Git</p>

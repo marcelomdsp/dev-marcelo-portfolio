@@ -1,5 +1,7 @@
 import "./styles.css";
 import { CardProjetos } from "../../Components/cardProjetos";
+import fotografia from "../../img/projetos/fotografia.png";
+import fluxo from "../../img/projetos/fluxo.png";
 import imc from "../../img/projetos/imc.png";
 import trafego from "../../img/projetos/trafego.png";
 import portfolio from "../../img/projetos/portfolio.png";
@@ -15,13 +17,33 @@ export function Projetos() {
         </div>
 
         <div class="projetos-lista">
+         ${
+           CardProjetos(
+             fotografia,
+             "Site de Fotografia (em desenvolvimento)",
+             "Um site responsivo de fotografia para apresentar um portfólio de fotos, desenvolvido com React, Next.js, TypeScript e Tailwind CSS.",
+             "https://camilla-fotografia.vercel.app/",
+             "https://github.com/marcelomdsp/camilla-fotografia",
+           ).outerHTML
+         }
+             
+         ${
+           CardProjetos(
+             fluxo,
+             "Fluxo Financeiro (em desenvolvimento)",
+             "Um aplicativo de carteira digital para gerenciamento financeiro, desenvolvido com React Native, Expo, TypeScript e Styled Components.",
+             "https://github.com/marcelomdsp/fluxo-financeiro",
+             "https://github.com/marcelomdsp/fluxo-financeiro",
+           ).outerHTML
+         }
+             
              ${
                CardProjetos(
                  portfolio,
                  "Meu Portfólio",
                  "Portfólio pessoal responsivo desenvolvido com HTML, CSS e JavaScript puro, utilizando Vite e componentização. O projeto me ajudou a entender mais sobre a base da web e como estruturar páginas de forma modular e organizada sem usar frameworks.",
                  "#hero",
-                 "https://github.com/marcelo1310/portifolio-marcelo-dev"
+                 "https://github.com/marcelo1310/portifolio-marcelo-dev",
                ).outerHTML
              }
 
@@ -31,7 +53,7 @@ export function Projetos() {
                 "Landing Page de Tráfego Pago",
                 "Landing page responsiva criada para apresentar serviços de Gestão de Tráfego Pago, com foco em negócios locais. Desenvolvida com React, Vite, Tailwind CSS e TypeScript, inclui otimização SEO e deploy na HostGator.",
                 "https://marcelods.com/",
-                "https://github.com/marcelomdsp/marcelo-gestaodetrafego"
+                "https://github.com/marcelomdsp/marcelo-gestaodetrafego",
               ).outerHTML
             }
 
@@ -41,7 +63,7 @@ export function Projetos() {
                 "Calculadora de IMC",
                 "Aplicação de cálculo de IMC desenvolvida com React e utilização de Context API. Projeto focado em prática de estados globais, componentização e responsividade, utilizando Vite e TypeScript. ",
                 "https://calculeseuimc-msp.vercel.app/",
-                "https://github.com/marcelomdsp/calculo-de-imc-react"
+                "https://github.com/marcelomdsp/calculo-de-imc-react",
               ).outerHTML
             }
      
